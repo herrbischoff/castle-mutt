@@ -22,7 +22,7 @@ mailboxes +INBOX \
 
 subscribe ^mutt-users@mutt\\.org$
 
-macro index A "<save-message>=Archive<return>" "move message to archive folder"
+macro index,pager,browser A "<save-message>=Archive<return>" "move message to archive folder"
 
 # account-hook $folder "set spoolfile="+INBOX"
 
