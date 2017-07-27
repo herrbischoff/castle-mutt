@@ -19,6 +19,8 @@ macro index,pager,attach S ":set autoedit=no fast_reply=yes editor=\"true\"\n<ta
 # }}}
 # {{{ HTML handling
 macro pager \Cu "|urlview<enter>" "call urlview to open links"
+macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 macro pager l "| elinks -force-html; clear\n"
 # }}}
 # {{{ Sidebar Patch
