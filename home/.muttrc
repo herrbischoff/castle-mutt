@@ -19,7 +19,7 @@ auto_view text/html # view html automatically
 set beep_new # bell on new mails
 set delete # don't ask, just do
 unset confirmappend
-set editor="/opt/local/bin/nvim -c 'set ft=mail wrap fo+=aw'"
+set editor="nvim -c 'set ft=mail wrap fo+=aw'"
 set envelope_from # set the envelope-from information
 set fcc_clear # Keep fcc's clear of signatues and encryption.
 set hidden_host # Hide host details.
@@ -31,8 +31,8 @@ set nostrict_threads
 set pager_stop=yes
 set pipe_decode # strip headers and eval mimes when piping
 set postpone = ask-no # ask when postponing, default no
-# set query_command = "contacts -Sf '%eTOKEN%n' '%s' 2>&1 | grep -v CoreData | sed -e 's/TOKEN/\t/g'"
-set query_command="contacts '%s' 2> /dev/null"
+set query_command = "contacts -Sf '%eTOKEN%n' '%s' 2>&1 | grep -v CoreData | sed -e 's/TOKEN/\t/g'"
+# set query_command="contacts '%s' 2> /dev/null"
 bind editor <Tab> complete-query
 bind editor ^T    complete
 set quit # don't ask, just do!!
