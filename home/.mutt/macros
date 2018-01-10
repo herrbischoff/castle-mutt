@@ -4,7 +4,8 @@ macro index,pager gl "<change-folder>=Logs<enter>" "Change to Logs"
 macro index,pager gs "<change-folder>=Sent<enter>" "Change to Sent"
 macro index,pager gj "<change-folder>=Junk<enter>" "Change to Junk"
 macro index,pager ga "<change-folder>=Archive<enter>" "Change to Archive"
-macro index,pager gm "<change-folder>=MacPorts<enter>" "Change to MacPorts mailing list"
+macro index,pager gt "<change-folder>=Trash<enter>" "Change to Trash"
+macro index,pager - "<change-folder>?" "Folder list"
 # }}}
 # {{{ mbsync
 macro index n "<shell-escape>mbsync --all && notmuch new<enter>" "run mbsync to sync all mail"
@@ -12,7 +13,7 @@ macro index n "<shell-escape>mbsync --all && notmuch new<enter>" "run mbsync to 
 # {{{ Saner copy/move dialogs
 macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
 macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
-macro index,pager J "<save-message>=Junk<enter>" "Change to Junk"
+# macro index,pager J "<save-message>=Junk<enter>" "Change to Junk"
 # }}}
 # {{{ Spamcop
 macro index,pager,attach S ":set autoedit=no fast_reply=yes editor=\"true\"\n<tag-prefix><forward-message>submit.GZCfUpRwtLeZLlPz@spam.spamcop.net\nspam@knujon.net, spam@uce.gov\ny" "Forward mail to SpamCop"
@@ -35,4 +36,4 @@ macro index / "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch-py
 # 'a' shows all messages again (supersedes default <alias> binding)
 macro index a "<limit>all\n" "show all messages (undo limit)"
 # }}}
-# vim:foldmethod=marker:foldlevel=0:ft=muttrc
+# vim:foldmethod=marker:ft=muttrc

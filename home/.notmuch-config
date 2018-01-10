@@ -34,6 +34,7 @@ path=/Users/mbischoff/mail
 name=Marcel Bischoff
 primary_email=marcel@herrbischoff.com
 other_email=marcel@irulan.net;
+other_email=moin@herrbischoff.com;
 
 # Configuration for "notmuch new"
 #

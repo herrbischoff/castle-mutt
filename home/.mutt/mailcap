@@ -28,6 +28,6 @@ application/zip; ~/.mutt/view_attachment.sh %s zip "/Applications/BetterZip.app"
 application/pdf; ~/.mutt/view_attachment.sh %s pdf
 
 # Unidentified.
-application/octet-stream; ~/.mutt/view_attachment.sh %s "-" 
+application/octet-stream; ~/.mutt/view_attachment.sh %s "-"
 
 text/html; w3m -I %{charset} -T text/html; copiousoutput;

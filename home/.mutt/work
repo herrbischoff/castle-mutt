@@ -1,9 +1,11 @@
 set spoolfile="+INBOX"
 set postponed="+Drafts"
-set record="+Sent"
+# set record="+Sent"
+#
+folder-hook . 'set record="^"'
 
 ## Send options.
-set sendmail = "msmtp -a default"
+set sendmail = "msmtp -a marcel@herrbischoff"
 set realname = "Marcel Bischoff
 set from = marcel@herrbischoff.com
 set hostname = herrbischoff.com
